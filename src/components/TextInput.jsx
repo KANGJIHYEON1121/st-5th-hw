@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function TextInput({ onAddText }) {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -11,7 +11,7 @@ function TextInput({ onAddText }) {
     e.preventDefault();
     if (inputValue.trim()) {
       onAddText(inputValue);
-      setInputValue("");
+      setInputValue('');
     }
   };
 
